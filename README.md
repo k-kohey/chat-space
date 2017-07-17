@@ -30,8 +30,8 @@
 
 ### Association
 - has_many :massage
-- has_many :group , through  :members
 - has_many :members
+- has_many :group , through: :members
 
 ## groupテーブル   
 |Column|Type|Options|
@@ -40,5 +40,5 @@
 
 ### Association
 - has_many :massage
-- has_many :user, through :members
-- has_many :members 
+- has_many :members
+- has_many :user, through: :members
