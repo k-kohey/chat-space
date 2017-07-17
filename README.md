@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+インターンの研修にて作成.心がけることは以下の３つ.
+#わからないことは必ず一度は自分で調べる
 
-Things you may want to cover:
+ChatSpaceを開発していく中で、今まで学習してきた内容でも忘れてしまったことや、新しい知識が出てきます。そうしたときにメンターに聞く前にまずは一度ご自身で調べてみましょう。目安として20分程度調べてもわからないときにはメンターに聞くようにしましょう。
 
-* Ruby version
+#読みやすいソースコードを心がける
 
-* System dependencies
+人が読んでも理解しやすいソースコードを記述しましょう。変数名や関数の書き方など、どうやったら第三者が読みやすくなるかを考えることでチーム開発で求められるエンジニアになれます。
 
-* Configuration
+#変更に強いプログラムを心がける
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Webサービスは作ったら終わりではありません。ほとんどの場合、仕様の変更やデザインの変更が絶え間なく起きます。そうしたときに変更に強いプログラムが必要となります。ChatSpaceでも途中で仕様の変更が起きます。その際に、早い段階で仕様の変更を想定した柔軟なプログラムを書いているかで変更のしやすさが変わってきます。
+変更に強いプログラムを書くためには、共通の処理を関数化したり、定数を使ってコード中の固定数値や固定文字列をなるべく避けるといった工夫が必要になります。
