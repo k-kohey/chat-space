@@ -8,7 +8,8 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
- - none
+ - belongs_to :user
+ - belongs_to :group
 
 ## massageテーブル
 |Column|Type|Options|
@@ -29,7 +30,8 @@
 
 ### Association
 - has_many :massage
-- has_many :group , through: members
+- has_many :group , through  :members
+- has_many :members
 
 ## groupテーブル   
 |Column|Type|Options|
@@ -38,4 +40,5 @@
 
 ### Association
 - has_many :massage
-- has_many :user, through:members 
+- has_many :user, through :members
+- has_many :members 
