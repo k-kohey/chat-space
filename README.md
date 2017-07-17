@@ -22,3 +22,25 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
+
+## userテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|text|null: false|
+|email|text|null: false|
+|password|text|null: false|
+
+### Association
+- has_many :massage
+- has_many :members
+
+## groupテーブル   
+|Column|Type|Options|
+|------|----|-------|
+|name|text|null: false|
+|email|text|null: false|
+|password|text|null: false|
+
+### Association
+- has_many :massage
+- has_many :members
