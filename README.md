@@ -8,14 +8,13 @@
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+ - none
 
 ## massageテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|text|null: false|
-|image|blob||
+|image|string||
 |group_id|integer|null: false, foreign_key:true|
 |user_id|integer|null: false, foreign_key:true|
 
@@ -26,21 +25,17 @@
 ## userテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
-|email|text|null: false|
-|password|text|null: false|
+|name|text|null: false, index: true, unique: ture|
 
 ### Association
 - has_many :massage
-- has_many :members
+- has_many :group , through: members
 
 ## groupテーブル   
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
-|email|text|null: false|
-|password|text|null: false|
+|name|text|null: false, unique: true|
 
 ### Association
 - has_many :massage
-- has_many :members
+- has_many :user, through:members 
