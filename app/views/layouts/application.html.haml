@@ -7,4 +7,12 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
+  	.side-bar
+  		.side-bar__top-contents.user-info
+  				.user-info__user-name
+  				.user-info__edit-contents.icon-contents
+  					.icon-contents--left
+  					.icon-contents--right
+  		.side-bar__bottom-contents.room-index
+  			.room-index-content
     = yield
