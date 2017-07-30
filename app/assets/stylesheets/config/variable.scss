@@ -2,10 +2,27 @@ $main-font-color: #434A54;
 $sub-font-color: #999;
 $title-font-color: #333;
 $border-color: #eee;
-$side-bottom-color: #21f3e51;
+$side-bottom-color: #2f3e51;
 $side-top-color: #253141;
 $blue: #AAA;
 
 @for $i from 12 through 20{
-	%fs#{$i}{font-size: $ipx;}
+	%fs#{$i}{font-size: #{$i}px;}
 }
+
+@for $i from 1 through 30{
+	%mt#{$i}{margin-top:#{$i}px;}
+}
+
+@for $i from 1 through 30{
+	%mr#{$i}{margin-right:#{$i}px;}
+}
+
+@for $i from 1 through 30{
+	%ml#{$i}{margin-left:#{$i}px;}
+}
+
+@for $i from 1 through 30{
+	%mb#{$i}{margin-bottom:#{$i}px;}
+}
+

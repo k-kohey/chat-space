@@ -1,0 +1,6 @@
+.icon-contents{
+	color: white;
+	@include link(white);
+	&--left{}
+	&--right{}
+}
