@@ -1,5 +1,3 @@
 .side-bar{
-  height: 100%;
-  &__header{
-  }
+  @include box()
 }

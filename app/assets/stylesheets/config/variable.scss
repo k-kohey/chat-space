@@ -1,0 +1,11 @@
+$main-font-color: #434A54;
+$sub-font-color: #999;
+$title-font-color: #333;
+$border-color: #eee;
+$side-bottom-color: #21f3e51;
+$side-top-color: #253141;
+$blue: #AAA;
+
+@for $i from 12 through 20{
+	%fw#{$i}{font-size: $ipx;}
+}
