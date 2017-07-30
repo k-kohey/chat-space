@@ -7,15 +7,18 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-  /あとでテンプレート化する
-  /ここsidebar
-  	.side-bar
-  		.side-bar__top-contents.user-info
-  				.user-info__user-name
-  				.user-info__edit-contents.icon-contents
-  					.icon-contents--left
-  					.icon-contents--right
-  		.side-bar__bottom-contents.room-index
-  			.room-index-content
- /side-bar終
+    .sidebar
+      .top
+        .top__user-name
+          ユーザー名
+        .top__edit-button.icon-contents
+          %a.icon-contents--left{href: 'hoge'}
+            =fa_icon 'cog'
+          %a.icon-contents--right{href: 'hoge'}
+            =fa_icon 'pencil-square-o'
+      %a.bottom
+        .bottom__room-content
+          部屋名
+        .bottom__room-content--small
+          こんにちは
     = yield
