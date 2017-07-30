@@ -1,4 +1,34 @@
-.side-bar{
-  height: 100%;
-  @include box($side-bottom-color,300px,100%);
+.sidebar {
+    height: 100%;
+    @include box($side-bottom-color, 300px, 100%);
+    .top {
+        background-color: $side-top-color;
+        padding: 35px 20px 20px 20px;
+        @include flex();
+        &__user-name {
+            @include font(16px, #FFF);
+            font-weight: bold;
+        }
+        &__edit-button {
+            @include flex();
+        }
+        .icon-contents {
+            color: white;
+            @include link(white);
+            &--left {}
+            &--right {}
+        }
+        .bottom {
+            display: block;
+            padding: 20px;
+            padding-bottom: 0;
+            &__room-content {
+                @include font(15px, #FFF);
+                &--small {
+                    @include font(11px, #FFF);
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
 }

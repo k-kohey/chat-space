@@ -2,24 +2,24 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %link{rel: 'stylesheet', type: 'text/css',href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}
+    / %link{rel: 'stylesheet', type: 'text/css',href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}
     %title ChatSpace
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
-    .side-bar
-      .top-contents
-        .top-contents__user-name
+    .sidebar
+      .top
+        .top__user-name
           ユーザー名
-        .top_contents__edit-button.icon-contents
+        .top__edit-button.icon-contents
           %a.icon-contents--left{href: 'hoge'}
             =fa_icon 'cog'
           %a.icon-contents--right{href: 'hoge'}
             =fa_icon 'pencil-square-o'
-      %a.bottom-contents
-        .bottom-contents__room-content
+      %a.bottom
+        .bottom__room-content
           部屋名
-        .bottom-contents__room-content--small
+        .bottom__room-content--small
           こんにちは
     = yield

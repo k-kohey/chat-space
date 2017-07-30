@@ -24,26 +24,26 @@
     align-items: center;
 }
 
-@mixin link($color){
-a {
-    &:link {
-        color: $color;
-        text-decoration: none;
-    }
+@mixin link($color) {
+    a {
+        &:link {
+            color: $color;
+            text-decoration: none;
+        }
 
-    &:visited {
-        color: $color;
-        text-decoration: none;
-    }
+        &:visited {
+            color: $color;
+            text-decoration: none;
+        }
 
-    &:hover {
-        color: $color;
-        text-decoration: none;
-    }
+        &:hover {
+            color: $color;
+            text-decoration: none;
+        }
 
-    &:active {
-        color: $color;
-        text-decoration: none;
+        &:active {
+            color: $color;
+            text-decoration: none;
+        }
     }
-}
 }
