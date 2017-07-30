@@ -18,16 +18,16 @@
             &--left {}
             &--right {}
         }
-        .bottom {
-            display: block;
-            padding: 20px;
-            padding-bottom: 0;
-            &__room-content {
-                @include font(15px, #FFF);
-                &--small {
-                    @include font(11px, #FFF);
-                    margin-top: 5px;
-                }
+    }
+    .bottom {
+        display: block;
+        padding: 20px;
+        padding-bottom: 0;
+        &__room-content {
+            @include font(15px, #FFF);
+            &--small {
+                @include font(11px, #FFF);
+                margin-top: 5px;
             }
         }
     }
