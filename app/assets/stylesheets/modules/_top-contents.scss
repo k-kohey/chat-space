@@ -1,0 +1,11 @@
+.top_contents{
+	background-color: $side-top-color;
+	padding:0 20px;
+	@include flex();
+	&__user-name{
+		@include font(16px,#FFF,bold);
+	}
+	$__edit-button{
+		@include flex();
+	}
+}

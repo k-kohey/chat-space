@@ -7,5 +7,5 @@ $side-top-color: #253141;
 $blue: #AAA;
 
 @for $i from 12 through 20{
-	%fw#{$i}{font-size: $ipx;}
+	%fs#{$i}{font-size: $ipx;}
 }
